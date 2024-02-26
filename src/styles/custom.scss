@@ -1,0 +1,15 @@
+@import "variables";
+
+
+.navbar {
+    background-color: var(--navbar-scroll);
+    transition: background-color 1s ease;
+    // color: var(--navbar-scroll-text);
+    // -webkit-box-shadow: var(--navbar-scroll-shadow);
+    // box-shadow: var(--navbar-scroll-shadow);
+  }
+  .a:hover {
+    color: gold;
+    background-color: #4e9525;
+    text-decoration-color: #4e9525;
+  }
