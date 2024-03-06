@@ -1,23 +1,42 @@
 import { useState } from "react";
 import "./styles/custom.scss";
-import { BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
-import Home from './components/home';
-import About from './components/about';
-import Contact from './components/contact';
-import NavBar from "./layouts/NavBar";
+// views
+import Home from "./views/home";
+import About from "./views/about";
+import Contact from "./views/contact";
+import Layout from "./layouts/layout";
+import Internet from "./views/internet";
+import Television from "./views/television";
+import Faq from "./views/faq";
+import Jobs from "./views/jobs";
+import Empresas from "./views/empresas";
+import Legal from "./views/legal";
+import Block from "./views/block";
+import Support from "./views/support";
+import Error from "./views/error";
 
+//function
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div>
       <Routes>
-        <Route path="/" element={<NavBar />}>
+        <Route path="/" element={<Layout />}>
           <Route path="about" element={<About />} />
           <Route path="home" element={<Home />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<Home />} />
+          <Route path="internet" element={<Internet />} />
+          <Route path="television" element={<Television />} />
+          <Route path="faq" element={<Faq />} />
+          <Route path="jobs" element={<Jobs />} />
+          <Route path="empresas" element={<Empresas />} />
+          <Route path="legal" element={<Legal />} />
+          <Route path="block" element={<Block />} />
+          <Route path="support" element={<Support />} />
+          <Route path="*" element={<Error />} />
         </Route>
       </Routes>
     </div>
@@ -25,3 +44,4 @@ function App() {
 }
 
 export default App;
+

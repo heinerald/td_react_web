@@ -7,9 +7,57 @@
     // color: var(--navbar-scroll-text);
     // -webkit-box-shadow: var(--navbar-scroll-shadow);
     // box-shadow: var(--navbar-scroll-shadow);
-  }
-  .a:hover {
-    color: gold;
-    background-color: #4e9525;
-    text-decoration-color: #4e9525;
-  }
+}
+.a:hover {
+  color: gold;
+  background-color: #4e9525;
+  text-decoration-color: #4e9525;
+}
+
+// boton de whatsapp
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.floatplay{
+  position:fixed;
+  width:90px;
+  height:50px;
+  bottom:40px;
+  left:40px;  
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+.float:hover {
+  text-decoration: none;
+  color: #FFF;
+  background-color:#1ab152;
+    
+    animation: shake 1s;
+
+  
+  animation-iteration-count: infinite;
+}
+.my-float{
+  margin-top:16px;
+}
+
+// boton de whatsapp
+iframe {
+  border: 1px solid black;
+  width: 100%; /* takes precedence over the width set with the HTML width attribute */
+}
+.play{
+  box-shadow: 2px 2px 3px #999;
+}

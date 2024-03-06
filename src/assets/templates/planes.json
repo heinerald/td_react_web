@@ -1,0 +1,26 @@
+{
+    "nombre":"planes",
+    "planes":[
+        {
+            "plan":"diamante",
+            "precio":"120.000",
+            "Up_Mbps":"400",
+            "Down_Mbps":"400",
+            "tv":"No aplica"
+        },
+        {
+            "plan":"Estudiante",
+            "precio":"50.000",
+            "Up_Mbps":"100",
+            "Down_Mbps":"100",
+            "tv":"Si aplica"
+        },
+        {
+            "plan":"Gamer",
+            "precio":"120.000",
+            "Up_Mbps":"500",
+            "Down_Mbps":"500",
+            "tv":"No aplica"
+        }
+    ]
+}

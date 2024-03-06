@@ -1,9 +1,21 @@
 import React from "react";
 
-function about() {
+const banner = {
+  backgroundImage: "url(src/assets/img/testing.jpg)",
+position: "relative",
+BackgroundPosition: "50% calc(50% + 0px)",
+backgroundSize: "cover",
+filter:"opacity(100%)",
+}
+
+
+function block() {
   return (
     <div>
-      <div className="py-5 text-center parallax cover gradient-dark">
+       <div
+        className="py-5 text-center parallax cover gradient-dark"
+        style={banner}
+      >
         <div className="container d-flex flex-column">
           <div className="row my-auto">
             <div className="col-md-12 text-white my-5">
@@ -29,10 +41,9 @@ function about() {
               <div
                 className="position-relative overflow-hidden h-100"
               >
-                {/* <img className="position-absolute w-100 h-100 pt-5 pe-5" src="../../../assets/img/ingeniero-electrico-trabajando-conmutador-red_23-2148323425.jpg" alt=""
-            style="object-fit: cover;"> */}
-                {/* <img className="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="../../../assets/img/img/" alt=""
-            style="width: 200px; height: 200px;"> */}
+                <img className="avatar position-absolute pt-5 pe-5"src="src/assets/img/ingeniero-electrico-trabajando-conmutador-red_23-2148323425.jpg" 
+            style={{}}/>
+                {/* object-fit: cover>  estaba agregado en la imagen */}
               </div>
             </div>
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -49,13 +60,13 @@ function about() {
                     internet de alta velocidad a través de fibra óptica, lo que
                     le permite navegar por la web con mayor velocidad y
                     fiabilidad. También ofrecemos servicios de televisión por
-                    cable y por internet, lo que le permite disfrutar de su
-                    programación favorita sin tener que suscribirse a un
-                    servicio de televisión por cable.
+                    cable y por internet. 
+                    Somo una empresa constituida desde 2017 ofreciendo servicios 
+                    principalemnte a empresas "pymes e ISP" y enfocada en proyectos.
                   </p>
-                  <span className="text-primary">
+                  {/* <span className="text-primary">
                     <a href="">Para más informacion de tv por internet OTT</a>
-                  </span>
+                  </span> */}
                 </div>
                 <p className="mb-5 border-bottom">
                   <span className="text-primary">MISIÓN</span> <br />
@@ -85,4 +96,4 @@ function about() {
   );
 }
 
-export default about;
+export default block;
