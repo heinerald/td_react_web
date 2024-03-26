@@ -1,4 +1,5 @@
 import React from 'react'
+import img from "../assets/img/Warning.svg";
 
 function block() {
   return (
@@ -8,7 +9,7 @@ function block() {
       <div class="card">
         {/* <img class="imgblock" src="../../../../assets/img/img/logo-circular.png" width="20%"> */}
         <div class="imgh">
-            <img src="src/assets/img/Warning.svg" width="300px" />
+            <img src={img} width="300px" />
             <h1>PAGINA BLOQUEADA</h1>
         </div>
         <div class="leyes">

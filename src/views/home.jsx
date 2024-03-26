@@ -1,30 +1,27 @@
-import React from 'react'
-
-const banner = {
-backgroundImage: "url(src/assets/img/banner_redes2.png)",
-position: "relative",
-BackgroundPosition: "50% calc(50% + 0px)",
-backgroundSize: "cover",
-filter:"opacity(100%)",
-}
-
-const logo = {
-width:"70",
-style:" opacity: 0.9;"
-}
+import React from "react";
+import background from "../assets/img/banner_redes2.png";
 
 function home() {
   return (
     <>
-        <div className="py-5 text-center parallax cover gradient-dark" 
-        style={banner}
-       >
+      <div
+        className="py-5 text-center parallax cover gradient-dark"
+        style={{
+          backgroundImage: `url(${background})`,
+          position: "relative",
+          BackgroundPosition: "50% calc(50% + 0px)",
+          backgroundSize: "cover",
+          filter: "opacity(100%)",
+        }}
+      >
         <div className="container d-flex flex-column">
           <div className="row my-auto">
             <div className="col-md-12 text-white my-5">
-            <img className="avatar"src="src/assets/img/silueta.png" 
-            style={{width:70,
-            opacity: 0.9}}/>
+              <img
+                className="avatar"
+                src="src/assets/img/silueta.png"
+                style={{ width: 70, opacity: 0.9 }}
+              />
               <h1 className="mb-3 ">"Navega a tu manera"</h1>
               <h3 className="mb-5">
                 La mejor conexión a internet en fibra óptica para tu hogar o
@@ -42,7 +39,7 @@ function home() {
       <div className="section-overlapping">
         <div className="text-center">
           <div className="container">
-            <div className="row py-5" id="pro">
+            <div className="row py-5" id="pro" style={{ textAlign: "justify" }}>
               <div className="col-md-8 mx-auto text-center">
                 <h2 className="mb-2">¿Cual es la velocidad de mi intenet?</h2>
                 <p className="lead mb-5">
@@ -52,14 +49,17 @@ function home() {
                   servicios directamente si esta con Telenet Digtial.
                   <br />
                   <br />- La velocidad contratada es dada en Megabites por
-                  segundo (<b>Mbps</b>).&nbsp;<br />
+                  segundo (<b>Mbps</b>).&nbsp;
+                  <br />
                   <br />- Para realizar el test de velocidad se recomienda sea
-                  por <b>medios guiados</b> "Por cables".<br />
+                  por <b>medios guiados</b> "Por cables".
+                  <br />
                   <br />- Los <b>medios no guiados</b> "wifi", no garantizan el
                   servicio, pueden presentarse perdidas de paquetes o lentitud
-                  en horas pico.<br />
-                  <br />- <b>Empresariales: </b>Pueden probar Max. 10 Gbps por puerto{" "}
-                  <b>para dedicados</b> en el siguiente enlace
+                  en horas pico.
+                  <br />
+                  <br />- <b>Empresariales: </b>Pueden probar Max. 10 Gbps por
+                  puerto <b>para dedicados</b> en el siguiente enlace
                 </p>
                 {/* <!-- <a className="btn btn-secondary rounded btn-lg text-primary" href="http://speedtest.telenetdigital.net.co/" target="_blank"> --> */}
                 <a
@@ -67,10 +67,14 @@ function home() {
                   href="http://speedtest.telenetdigital.net.co/"
                   target="_blank"
                 >
-                  <img src="src/assets/icons/speedometer.svg" alt="SVG as an image"/> IR A TEST DE VELOCIDAD
+                  <img
+                    src="src/assets/icons/speedometer.svg"
+                    alt="SVG as an image"
+                  />{" "}
+                  IR A TEST DE VELOCIDAD
                 </a>
               </div>
-              
+
               {/* <div className='mt-2'>
                 <iframe src="http://speedtest.telenetdigital.net.co/" width="300"
                 height="400"
@@ -119,8 +123,7 @@ function home() {
                 <div className="card-header">
                   <h4 className="my-0 font-weight-normal">Combo 100 Mbps</h4>
                 </div>
-                <div className="">
-                </div>
+                <div className=""></div>
                 <div className="card-body">
                   <h1>
                     <b>$ 83.000</b>
@@ -158,7 +161,7 @@ function home() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default home
+export default home;

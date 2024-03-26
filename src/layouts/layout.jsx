@@ -22,7 +22,7 @@ function layout() {
 
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-tertiary fixed-top">
+      <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -44,15 +44,13 @@ function layout() {
 
               {/*  PEOPLE */}
               <NavDropdown title="Personas" id="basic-nav-dropdown">
-                <NavDropdown.Item as={Link} className="nav-link" to="internet">
-                  Internet
-                </NavDropdown.Item>
+                
                 <NavDropdown.Item
                   as={Link}
                   className="nav-link"
-                  to="television"
+                  to="servicios"
                 >
-                  Televisión
+                  Servicios
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   className="nav-link"
@@ -166,6 +164,16 @@ function layout() {
                 <NavDropdown.Item as={Link} className="nav-link" to="faq">
                   FAQ
                 </NavDropdown.Item>
+                <NavDropdown.Item as={Link} className="nav-link" to="internet">
+                  Internet
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  className="nav-link"
+                  to="television"
+                >
+                  Televisión
+                </NavDropdown.Item>
                 <NavDropdown.Item as={Link} className="nav-link" to="support">
                   Soporte
                 </NavDropdown.Item>
@@ -259,7 +267,7 @@ function layout() {
               >
                 {/* <img src="../assets/img/img/LogoTeletenT2.png" width="250px"> */}
               </a>
-              <p className="mt-5">
+              <p className="mt-5" style={{ textAlign: "justify" }}>
                 Telenet Digital S.A.S, ofrece una amplia gama de servicios de
                 Internet y televisión digital, así como de infraestructura y
                 servicios tecnológicos. Todos nuestros servicios están diseñados
@@ -276,12 +284,20 @@ function layout() {
                 administracion@telenetdigital.net.co
               </p>
             </div>
-            <div className="col-lg-3 col-md-6">
-              <h5 className="mb-4">Otros aspectos</h5>
+            <div className="col-lg-3 col-md-12">
+              <h5 className="mb-4">Partners</h5>
+              <div className="row text-center text-lg-start">
+                <div className="col-lg-3 col-md-4 col-6">
+                  <img
+                    className="img-fluid "
+                    src="src/assets/empresas/ufinet.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
             <div className="col-lg-3 col-md-6">
               <h5 className="mb-4">EN VIVO</h5>
-              {/* <iframe src="https://emisora.telenetdigital.net.co/public/vipstereo/embed"></iframe> */}
             </div>
           </div>
         </div>

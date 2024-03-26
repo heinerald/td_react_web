@@ -6,7 +6,7 @@ function jobs() {
     <div>
       <div className="text-center">
         <div className="container">
-          <div className="row pt-4">
+          <div className="row pt-4" >
             {/* card1 */}
             <div className="col-md-6">
               <div className="card mb-4 box-shadow">

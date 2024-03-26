@@ -1,24 +1,26 @@
 import React from "react";
+import background from "../assets/img/banner_testing.jpg";
+import cobertura from "../assets/img/cobertura.png";
+import logo from "../assets/img/logo3.svg";
 
-const banner = {
-  backgroundImage: "url(src/assets/img/banner_testing.jpg)",
-  position: "relative",
-  BackgroundPosition: "50% calc(50% + 0px)",
-  backgroundSize: "cover",
-  filter: "opacity(100%)",
-};
 
 function contact() {
   return (
     <div>
       <div
         className="py-5 text-center parallax cover gradient-dark"
-        style={banner}
+        style={{
+          backgroundImage: `url(${background})`,
+          position: "relative",
+          BackgroundPosition: "50% calc(50% + 0px)",
+          backgroundSize: "cover",
+          filter: "opacity(100%)",
+        }}
       >
         <div className="container d-flex flex-column">
           <div className="row my-auto">
             <div className="col-md-12 text-white my-5">
-              {/* <img className="mb-5" src="../../../assets/img/img/logo3.svg" width="70" style=" opacity: 0.5;"> */}
+              <img className="mb-5" src={logo} width="70" style={{opacity: 0.5}}/>
             </div>
           </div>
 
@@ -68,7 +70,7 @@ function contact() {
               <br />
               <br />
               <h1 className="display-6 mb-3">Cobertura</h1>
-              <label htmlFor="">
+              <label htmlFor="" style={{ textAlign: "justify" }}>
                 La cobertura del servicio está sujeta a nuevos cambios que se
                 realicen en la red a lo largo del tiempo, la distribución
                 compartida es para usuarios finales! Si desea conocer acerca de
@@ -81,7 +83,7 @@ function contact() {
               <div className="position-relative rounded overflow-hidden h-100">
                 <img
                   className="avatar"
-                  src="src/assets/img/cobertura.png"
+                  src={cobertura}
                   style={{ height: 350 }}
                 />
               </div>
