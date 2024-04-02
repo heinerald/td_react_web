@@ -17,14 +17,23 @@ import Block from "./views/block";
 import Support from "./views/support";
 import Error from "./views/error";
 
+import ReactGA from "react-ga4";
+
 //function
 function App() {
   const [count, setCount] = useState(0);
+
+  const TRAKING_ID ='G-9LQ89Y7X3D'
+  ReactGA.initialize(TRAKING_ID);
+  // Multiple products (previously known as trackers)
+  // Send pageview with a custom path
+  // Send a custom event
 
   return (
     <div>
       <Routes>
         <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />

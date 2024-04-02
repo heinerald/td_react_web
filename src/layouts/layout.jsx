@@ -5,9 +5,11 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-
+import logo from "../assets/icons/whatsapp.svg";
+import logoTelenet from "../assets/img/LogoTeletenT2.png";
 import { MouseEvent } from "react";
 let sound = new Audio("https://emisora.telenetdigital.net.co:8000/radio.mp3");
+
 
 function layout() {
   const handlePlay = () => {
@@ -241,9 +243,8 @@ function layout() {
       <a
         href="https://web.whatsapp.com/send?phone=573209900025&text=Hola, me gustaria Obtener más información"
         className="float"
-        target="_blank"
       >
-        <img src="src/assets/icons/whatsapp.svg" alt="SVG as an image" />
+        <img src={logo} alt="SVG as an image" />
       </a>
       {/* ROUTER */}
       <div>
@@ -252,7 +253,7 @@ function layout() {
       {/*  FOOTER */}
       <hr />
       <div
-        className="container-fluid  text-50 footer mt-5 pt-5 wow fadeIn"
+        className="container-fluid  text-50 footer mt-5 pt-5 wow fadeIn bg-dark text-light"
         data-wow-delay="0.1s"
       >
         <div className="container py-5">
@@ -265,7 +266,7 @@ function layout() {
                 data-bs-toggle="tooltip"
                 href="#"
               >
-                {/* <img src="../assets/img/img/LogoTeletenT2.png" width="250px"> */}
+                <img src={logoTelenet} width="250px"/>
               </a>
               <p className="mt-5" style={{ textAlign: "justify" }}>
                 Telenet Digital S.A.S, ofrece una amplia gama de servicios de
@@ -325,7 +326,7 @@ function layout() {
             administracion@telenetdigital.net.co
           </small>
         </div>
-        <div className="col-lg-6 px-5 text-end">
+        {/* <div className="col-lg-6 px-5 text-end">
           <small>Siguenos en:</small>
           <a
             className="text-white-50 ms-3"
@@ -355,7 +356,7 @@ function layout() {
           >
             <i className="bi bi-instagram w-100 h-100"></i>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {BrowserRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 // import NavBar from './layouts/NavBar.jsx';
 // import ErrorPage from "./components/error.jsx";
 import App from './App.jsx';
@@ -20,9 +20,9 @@ import './styles/custom.scss';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
     {/* <RouterProvider router={router} /> */}
   </React.StrictMode>,
 )
